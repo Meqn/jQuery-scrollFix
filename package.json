@@ -1,0 +1,24 @@
+{
+  "name": "jQuery-scrollFix",
+  "version": "1.0.1",
+  "description": "jQuery-scrollFix",
+  "main": "jQuery.scrollFix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengqing723/jQuery-scrollFix.git"
+  },
+  "keywords": [
+    "scroll",
+    "fixed",
+    "jQuery"
+  ],
+  "author": "mengqing723@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mengqing723/jQuery-scrollFix/issues"
+  },
+  "homepage": "https://github.com/mengqing723/jQuery-scrollFix#readme"
+}
