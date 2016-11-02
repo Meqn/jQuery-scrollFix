@@ -1,10 +1,9 @@
-/**
+/*!
  * jQuery.scrollFix.js
  * @ desc: 滚动固定在某个位置的jQuery插件
  * @ version: v2.0.2
  * @ link: https://github.com/mengqing723/jQuery-scrollFix.git
  * @ date: 2016/10/26
- * @license MIT
  */
 ;(function (factory) {
     if (typeof define === 'function' && define.amd) {
@@ -35,10 +34,10 @@
                 $startObj = opts.startObj === null ? $this : $(opts.startObj),  // 滚动到 startObj 开始浮动固定
                 isEnd = opts.endObj === null ? false : true;    // 是否结束浮动固定
 
-            var _style = $this.attr('style') ? $this.attr('style') : '',    // 默认样式
+            var objStyle = $this.attr('style') ? $this.attr('style') : '',    // 默认样式
                 objWidth = $this.width();   // 默认宽度
-            var eleHeight = (opts.position === 'top') ? 0 : $startObj.outerHeight();    // (顶部|底部) 开始浮动
-            var startFix = $startObj.offset().top + eleHeight - opts.bottom;    // 滚动距离为 startFix 开始固定浮动
+            var objHeight = (opts.position === 'top') ? 0 : $startObj.outerHeight();    // (顶部|底部) 开始浮动
+            var startFix = $startObj.offset().top + objHeight - opts.bottom;    // 滚动距离为 startFix 开始固定浮动
             var endFix = isEnd ? parseInt($(opts.endObj).offset().top - opts.top - opts.endPos - $this.outerHeight()) : 0;  // 滚动距离为 endFix 结束固定浮动
             var endFixTop = endFix + opts.top;  // 变为跟随滚动后(fixed -> absolute)到顶部的距离
 
@@ -53,7 +52,7 @@
                     opts.fixEndFn();
                 },
                 default: function() {
-                    $this.attr('style', _style)
+                    $this.attr('style', objStyle)
                         .removeClass(opts.fixClass);
                     opts.endFn();
                 }
