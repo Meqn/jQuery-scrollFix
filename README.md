@@ -2,7 +2,7 @@
 # jQuery-scrollFix 介绍
 
 v2.0.2 更改单个多效果bug
-v2.0.3 添加回调方法
+v2.0.3 添加回调方法， 添加 activeClass 样式名
 
 
 ### 参数详解
