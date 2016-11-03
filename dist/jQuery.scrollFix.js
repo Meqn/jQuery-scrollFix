@@ -4,7 +4,7 @@
  * @ version: 2.0.2
  * @ link: https://github.com/mengqing723/jQuery-scrollFix
  * @ by: mengqing723@gmail.com
- * @ update: Wed Nov 02 2016 16:19:39 GMT+0800 (中国标准时间)
+ * @ update: Wed Nov 02 2016 16:49:55 GMT+0800 (中国标准时间)
  */
 
 ;(function (factory) {
@@ -38,8 +38,8 @@
 
             var objStyle = $this.attr('style') ? $this.attr('style') : '',    
                 objWidth = $this.width();   
-            var objHeight = (opts.position === 'top') ? 0 : $startObj.outerHeight();    
-            var startFix = $startObj.offset().top + objHeight - opts.bottom;    
+            var startHeight = (opts.position === 'top') ? 0 : $startObj.outerHeight();    
+            var startFix = $startObj.offset().top + startHeight - opts.bottom;    
             var endFix = isEnd ? parseInt($(opts.endObj).offset().top - opts.top - opts.endPos - $this.outerHeight()) : 0;  
             var endFixTop = endFix + opts.top;  
 

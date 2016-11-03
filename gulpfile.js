@@ -19,8 +19,7 @@ gulp.task('build', function() {
         ''].join('\n');
 
 	gulp.src('./jQuery.scrollFix.js', {base: './'})
-		.pipe(replace(/\/\/.*/g, "")) 			// 取消注释
-		.pipe(replace(/\/\*[\s\S]*\*\//g, ""))
+		.pipe(replace(/(\/\/.*)|(\/\*[\s\S]*?\*\/)/g, "")) 		// 去掉注释
 		.pipe(header(banner, { pkg : pkg } ))
 		.pipe(gulp.dest('./dist/'))
 		.pipe(uglify())
@@ -29,7 +28,7 @@ gulp.task('build', function() {
 		.pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('server', function () {
+gulp.task('server', ['build'], function () {
 	connect.server({
 		name: 'test',
 		root: './',

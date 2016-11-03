@@ -36,8 +36,8 @@
 
             var objStyle = $this.attr('style') ? $this.attr('style') : '',    // 默认样式
                 objWidth = $this.width();   // 默认宽度
-            var objHeight = (opts.position === 'top') ? 0 : $startObj.outerHeight();    // (顶部|底部) 开始浮动
-            var startFix = $startObj.offset().top + objHeight - opts.bottom;    // 滚动距离为 startFix 开始固定浮动
+            var startHeight = (opts.position === 'top') ? 0 : $startObj.outerHeight();    // (顶部|底部) 开始浮动
+            var startFix = $startObj.offset().top + startHeight - opts.bottom;    // 滚动距离为 startFix 开始固定浮动
             var endFix = isEnd ? parseInt($(opts.endObj).offset().top - opts.top - opts.endPos - $this.outerHeight()) : 0;  // 滚动距离为 endFix 结束固定浮动
             var endFixTop = endFix + opts.top;  // 变为跟随滚动后(fixed -> absolute)到顶部的距离
 
