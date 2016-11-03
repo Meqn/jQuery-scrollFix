@@ -1,10 +1,13 @@
 
 # jQuery-scrollFix 介绍
 
-jQuery-scrollFix 一个滚动固定在某个位置的jQuery插件。
-遵循 AMD 、CMD 规范
+jQuery-scrollFix 一个滚动固定在某个位置的jQuery插件。  
 
-### 参数详解
+遵循 AMD 、CMD 规范  
+
+当前版本： v2.0.2
+
+# 参数详解
 
 参数 | 描述 | 默认值
 ---|---|---|---
@@ -53,3 +56,11 @@ $('#nav').scrollFix({
 });
 ```
 
+### Demo
+
+[点击预览](https://github.com/mengqing723/jQuery-scrollFix/tree/master/example)
+
+
+# Bug tracker
+
+Have a bug? Please create an issue on GitHub at [issues](https://github.com/mengqing723/jQuery-scrollFix/issues)
