@@ -1,7 +1,7 @@
 
 # jQuery-scrollFix 介绍
 
-jQuery-scrollFix 一个滚动固定在某个位置的jQuery插件。  
+jQuery-scrollFix 一个滚动固定在某个位置的jQuery插件。   [点击预览](http://mengqing723.github.io/public/demo/jQ_scrollFix/index.html)
 
 遵循 `AMD` 、`CMD` 规范  
 
